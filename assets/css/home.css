@@ -59,9 +59,23 @@ body {
   font-family: sans-serif;
   width: var(--full-vw);
   height: var(--full-vh);
+  overflow-x: hidden;
+}
+/* footer */
+footer {
+  padding: 5rem 0;
+  width: var(--full-w);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: darkcyan;
+  margin-top: auto;
 }
 /* wrapper */
 .wrapper {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
   width: var(--full-w);
   height: var(--full-h);
   background: var(--f-col);
@@ -162,11 +176,36 @@ body {
 .show {
   display: flex !important;
 }
-
-/* responsiveness */
+/* content sections */
+.content {
+  margin-top: 1rem;
+  width: 100%;
+  background: blueviolet;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+  /* height: calc(100vh - 230px); */
+}
+/* aside section */
+.aside {
+  width: 20%;
+  background: chocolate;
+}
+.slide-wrapper {
+  width: 60%;
+  background: #ecb084;
+}
+.banner {
+  width: 20%;
+  background: #2ec769;
+}
+/* responsiveness / media queries*/
 @media only screen and (max-width: 680px) {
   body {
     overflow-x: hidden;
+  }
+  .content {
+    margin-top: 200px;
   }
   .main-nav {
     flex-flow: column;
@@ -189,15 +228,15 @@ body {
     flex-wrap: var(--wrap);
     width: var(--full-w);
     padding: 0.4rem 0;
-    transition: top 0.3s;
+    transition: 0.3s linear;
   }
-  .menu button {
+  .menu button:hover {
     border-bottom: 2px solid #eee;
-    height: 100%;
+    /* height: 100%; */
   }
-  .menu a {
+  .menu a:hover {
     border-bottom: 2px solid #eee;
-    height: 100%;
+    /* height: 100%; */
   }
   .school-name {
     position: relative;
