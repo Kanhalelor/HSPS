@@ -1,8 +1,10 @@
+/*slider styles*/
+
+
 #slider {
   position: relative;
-  width: 100%;
-  height: 100%;
-
+  width: 650px;
+  margin: 0 auto;
   overflow: hidden;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
@@ -10,7 +12,7 @@
   position: relative;
   list-style: none;
   height: 100%;
-  width: 10000%;
+  width: 1000%;
   padding: 0;
   margin: 0;
   transition: all 750ms ease;
@@ -23,8 +25,8 @@
   float: left;
 }
 #slider ul li img {
-  width: 100%;
-  height: 100%;
+  max-width: 640px;
+  height: 400px;
 }
 
 #slider #prev,
