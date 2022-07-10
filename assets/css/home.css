@@ -1,5 +1,4 @@
 /* super globals */
-
 *,
 *::before,
 *::after {
@@ -56,7 +55,7 @@ html {
 }
 /* body */
 body {
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   width: var(--full-vw);
   height: var(--full-vh);
   overflow-x: hidden;
@@ -71,6 +70,7 @@ footer {
   align-items: center;
   background: white;
   margin-top: auto;
+  border-top: 3px solid #eee;
 }
 /*contact wrapper*/
 .contact-wrapper {
@@ -291,9 +291,10 @@ footer {
 }
 .slide-wrapper {
   display: flex;
-  flex-flow: row-wrap;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;
   width: 700px;
+  height: 900px;
   padding: 1rem .5rem;
   /*background: #ecb084;*/
 }
@@ -305,21 +306,34 @@ footer {
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding-bottom: 1rem;
 }
 /*download div*/
 .download-div {
   margin-top: 2rem;
+  width: 300px;
   display: flex;
   flex-flow: column;
   align-items: center;
-  background: #e3e;
+  background: #fff;
   padding: .2rem .1rem;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.download-div:hover {
+  transform: scale(1.01);
+  transition: .3s ease-in-out;
+}
+.download-item-img {
+  opacity: .6;
+  outline: 2px solid #121212;
+  max-width: 100%;
+  height: 100%;
 }
 /* download item mane*/
 .download-item-name {
   text-transform: uppercase;
-  padding: .4rem 0;
+  padding: .5rem 0;
   text-align: center;
   width: 100%;
 }
@@ -331,7 +345,7 @@ footer {
   margin-top: .6rem;
   font-size: 16px;
   font-weight: 600;
-  background: #121212;
+  background: tomato;
   color: #fff;
   cursor: pointer;
   border: none;
@@ -340,7 +354,67 @@ footer {
   background: #fff;
   color: #121212;
   transition: 0.3s linear;
+  outline: .66px solid tomato;
 }
+
+/*school stats*/
+.school-statistics {
+  flex: 1;
+  margin: 3rem 0 0 0;
+  background: #eee;
+  color: #121212;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 1rem 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.stats-div {
+  display: flex;
+  flex-flow: row-wrap;
+  margin-top: 2rem;
+  width: 100%;
+  /*background: #231;*/
+  color: #eee;
+  justify-content: space-around;
+  padding: 2rem .4rem;
+}
+
+.main-stats-header {
+  width: 100;
+  background: #fff;
+  padding: .3rem .4rem;
+  border-radius: 4px;
+}
+.learners, .teachers, .staff {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  /*background: purple;*/
+  padding: 1rem 1rem;
+}
+.stats-header {
+  color: tomato;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.number {
+  margin-top: 2rem;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: #121212;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
 
 /* responsiveness / media queries*/
 @media only screen and (max-width: 680px) {
@@ -399,5 +473,14 @@ footer {
   }
   .bar:hover {
     color: blue;
+  }
+  .content {
+    width: 100vw;
+  }
+  .school-statistics,.aside, .slide-wrapper, .banner {
+    width: 100vw;
+  }
+  #slider {
+    width: 100%;
   }
 }
