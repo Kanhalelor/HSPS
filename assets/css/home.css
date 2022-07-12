@@ -13,7 +13,7 @@
   --wrap: wrap;
   --f-row: row;
   --d-block: block;
-  --primary-color: tomato;
+  --primary-color: #f8851a;
   --secondary-color: gray;
 
   --black: #121212;
@@ -82,7 +82,7 @@ footer {
 /*footer content*/
 .contact-street, .contact-postal, .contact-phone {
   margin: .5rem 1rem;
-  padding: 0rem 1.5rem;
+  padding: 0rem 2rem;
   display: flex;
   flex-direction: column;
   background: white;
@@ -91,7 +91,7 @@ footer {
 .contact-header {
   margin: 0 0 .4rem 0;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
 }
 .contact-street {
   border-right: 2px solid #121212;
@@ -102,7 +102,8 @@ footer {
 
 .info {
   margin: .2rem 0;
-  color: tomato;
+  color: #f8851a;
+  font-size: 14px;
 }
 /* banking details*/
 .banking-details {
@@ -121,8 +122,6 @@ footer {
   justify-content: center;
   width: 100%;
 }
-
-
 
 /* wrapper */
 .wrapper {
@@ -147,7 +146,6 @@ footer {
 /* logo container */
 .logo-container {
   height: 85%;
-  /* background: chartreuse; */
 }
 /* logo */
 .logo {
@@ -169,6 +167,7 @@ footer {
 .school-name {
   position: absolute;
   top: -70px;
+  font-size: 36px;
   width: var(--full-w);
   margin: 1rem 0;
   text-align: var(--text-center);
@@ -177,57 +176,41 @@ footer {
 .menu-a {
   display: var(--d-flex);
 }
+.active {
+  background: #fff;
+  color: black !important;
+}
 /* menu bar */
 .menu a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 2.5rem;
+  margin: 0 1.5rem;
   text-decoration: none;
   color: var(--white);
   font-size: 12px;
-  padding: 0.6rem 0.3rem;
+  padding: 0.6rem 0.2rem;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
 }
-/* menu bar button */
-.menu button {
-  outline: none;
-  background: none;
-  border: none;
-  color: var(--white);
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.6rem 0.3rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
-/* ad space */
-.ad-space-1 {
-  width: var(--full-w);
-  background: rgba(0, 0, 0, 0.77);
-  height: 40px;
-}
+
 /* hover effects */
 .menu a:hover {
   background: #fff;
   color: #121212;
-  /*border-bottom: 2px solid #eee;*/
-  transition: border 0.3 linear;
+  transition: background 0.3 linear;
 }
-.menu button:hover {
-  background: #fff;
-  color: #121212;
-  /*border-bottom: 2px solid #eee;*/
-  transition: border 3s linear;
-}
+
 /* menu bar  */
-.bar {
+.bars {
   visibility: hidden;
   position: absolute;
   color: var(--white);
+}
+.ad-space-1 {
+  width: var(--full-w);
+  background: rgba(0, 0, 0, 0.77);
+  height: 40px;
 }
 /* show classlist toggled */
 .show {
@@ -237,19 +220,19 @@ footer {
 .content {
   margin-top: 2rem;
   width: 100%;
-  /*background: tomato;*/
+  /* background:  for debugging purposes*/
   display: flex;
   flex-flow: row wrap;
-  flex: 1 1 auto;
-   height: fit-content; 
+  flex: 1;
+   /* height: 100vh;  */
 }
 /* aside section */
 .aside {
-  width: 20%;
+  width: 300px;
   display: flex;
   flex-flow: column;
   padding: 1rem 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
   background: white;
 }
 /*section header*/
@@ -278,7 +261,7 @@ footer {
 }
 /*event date*/
 .event-date {
-  color: tomato;
+  color: #f8851a;
 }
 /* read-more */
 .more-info {
@@ -287,7 +270,7 @@ footer {
   text-transform: italic;
 }
 .more-info:hover {
-  color: tomato;
+  color: #f8851a;
 }
 .slide-wrapper {
   display: flex;
@@ -301,8 +284,8 @@ footer {
 .banner {
   /*width: 20%;*/
   /*background: red;*/
-  flex-grow: 1;
-  margin-left: 1rem;
+  /* flex-grow: 1; */
+  margin: 0 1rem;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -312,9 +295,11 @@ footer {
 .download-div {
   margin-top: 2rem;
   width: 300px;
+  height: 350px;
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
   background: #fff;
   padding: .2rem .1rem;
   border-radius: 5px;
@@ -328,33 +313,40 @@ footer {
   opacity: .6;
   outline: 1px solid #121212;
   max-width: 100%;
-  height: 100%;
+  height: 78%;
 }
 /* download item mane*/
 .download-item-name {
+  padding: .4rem 0;
   text-transform: uppercase;
   padding: .5rem 0;
   text-align: center;
   width: 100%;
+  height: 22%;
 }
 
 /* download button*/
 .download-item-btn {
-  width: 100%;
+  border-radius: 5px;
+  width: 60%;
+  align-self: center;
+  height: 18%;
   padding: 1rem .2rem;
   margin-top: .4rem;
   font-size: 16px;
   font-weight: 600;
-  background: tomato;
+  background: #f8851a;
   color: #fff;
   cursor: pointer;
   border: none;
+  text-decoration: none;
+  text-align: center;
 }
 .download-item-btn:hover {
   background: #fff;
   color: #121212;
-  transition: 0.3s linear;
-  outline: .66px solid tomato;
+  transition: background 0.3s linear;
+  outline: .66px solid #f8851a;;
 }
 
 /*school stats*/
@@ -376,13 +368,17 @@ footer {
   flex-flow: row-wrap;
   margin-top: 2rem;
   width: 100%;
+  background-image: url(../stats-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   /*background: #231;*/
   color: #eee;
   justify-content: space-around;
   padding: 2rem .4rem;
 }
 
-.main-stats-header {
+.main-stats-header, .social-header {
   width: 100;
   background: #fff;
   padding: .3rem .4rem;
@@ -397,12 +393,13 @@ footer {
   padding: 1rem 1rem;
 }
 .stats-header {
-  color: tomato;
-  font-size: 18px;
+  color: #f8851a;
+  font-size: 20px;
   font-weight: 600;
+  text-align: center;
 }
 
-.number {
+#number {
   margin-top: 2rem;
   display: grid;
   place-items: center;
@@ -414,11 +411,52 @@ footer {
   font-weight: 600;
   font-size: 18px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  border: .5px solid #121212;
 }
 
-
+/* social container */
+.social {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  /* background: #f8851a; */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+/* social icons div */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+/* social icons link */
+.social-icons a {
+  margin: 0 4rem;
+}
+.social-icons a i {
+  color: darkgrey;
+  font-size: 48px;
+  background: none;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); */
+}
+/* larger middle icon */
+.middle {
+  font-size: 65px !important;
+}
+/* on hover */
+.social-icons a i:hover {
+  transform: scale(1.05);
+  color: var(--primary-color);
+  transition: color .3s ease-in-out;
+}
 /* responsiveness / media queries*/
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
   }
