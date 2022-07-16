@@ -1,0 +1,156 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #eee;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+
+    align-items: center;
+}
+
+.main-nav {
+    position: relative;
+    /* top: 0;
+    left: 0; */
+    background: #f8f5f586;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+.logo-container, .logo-link {
+    width: 150px;
+    height: 150PX;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: url("https://www.proedakademie.com/rw_common/images/Pro-Ed%20Logo-72%20DPI.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* .logo-link:hover {
+    background: #e0e0e0;
+    opacity: .55;
+} */
+#logo {
+    /* aspect-ratio: 4/3; */
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    box-sizing: content-box;
+}
+.menu li{
+    display: inline;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 3rem;
+}
+.menu li a {
+    text-decoration: none;
+    padding: 0.3rem .4rem;
+    color: #faa940;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+a:hover {
+    background: #fff;
+}
+
+.login-form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    width: 50%;
+    background: #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    margin: 3rem 0;
+    padding: .5rem;
+    position: relative;
+    border-radius: 10px;
+}
+
+.login {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    width: fit-content;
+    height: fit-content;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+
+}
+.form-header {
+    color: #121212;
+    text-align: center;
+    text-transform: capitalize;
+    width: fit-content;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    background: #fff;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    border-top: 2px solid #121212;
+    letter-spacing: 2px;
+
+}
+label {
+    align-self: flex-start;
+    font-size: 15px;
+    font-weight: 600;
+    color: #121212;
+    padding: .4rem 0;
+}
+
+.login-btn {
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    background: #e0e0e0;
+    cursor: pointer;
+    color: #121212;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    margin-top: 2rem;
+}
+
+input[type="email"], input[type="password"] {
+    border: none;
+    outline: none;
+    padding: .4rem .2rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+}
+input:active {
+    border: 2px solid #f8851a;
+}

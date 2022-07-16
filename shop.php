@@ -15,7 +15,7 @@
     <nav class="main-nav">
     <div class="logo-container">
         <a class="logo-link" href="./index.php" style="text-decoration: none;">
-            <img src="./assets/logo.jpg" alt="logo" id="logo">
+            <img src="https://www.proedakademie.com/rw_common/images/Pro-Ed%20Logo-72%20DPI.png" alt="logo" id="logo">
         </a>
     </div>
     <h1 class="welcome-msg">Welcome To Our Shop</h1>

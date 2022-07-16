@@ -3,7 +3,7 @@
   /* footer */
 footer {
   /*padding: 5rem 0;*/
-  width: var(--full-w);
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

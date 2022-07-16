@@ -41,7 +41,7 @@
             <a href="#">LIFE AT HSPS</a>
             <a href="#">GALLERY</a>
             <a href="./shop.php">HSPS SHOP</a>
-            <a href="#">HSPS LMS</a>
+            <a href="./lms.php">HSPS LMS</a>
             <a href="#active">LOGIN</a>
           </div>
         </div>
