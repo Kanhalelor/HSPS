@@ -137,7 +137,7 @@ footer {
   display: var(--d-flex);
   flex-wrap: var(--wrap);
   height: 190px;
-  background: rgba(0, 0, 0, 0.267);
+  background: #eee;
   align-items: center;
   justify-content: space-around;
 
@@ -171,6 +171,7 @@ footer {
   width: var(--full-w);
   margin: 1rem 0;
   text-align: var(--text-center);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 /* menu links */
 .menu-a {
@@ -359,7 +360,7 @@ footer {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
@@ -403,14 +404,14 @@ footer {
   margin-top: 2rem;
   display: grid;
   place-items: center;
-  background: #dededf79;
+  background: #fffffff3;
   color: #121212;
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
   border: .5px solid #121212;
 }
 

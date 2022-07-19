@@ -41,8 +41,7 @@
             <a href="#">LIFE AT HSPS</a>
             <a href="#">GALLERY</a>
             <a href="./shop.php">HSPS SHOP</a>
-            <a href="./lms.php">HSPS LMS</a>
-            <a href="#active">LOGIN</a>
+            <a href="./login.php">HSPS LMS</a>
           </div>
         </div>
       </div>
@@ -137,6 +136,12 @@
           <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
           <a href="#" class="fb"><i class="fa fa-facebook-official middle"></i></a>
           <a href="#" class="insta"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="map">
+        <h2 class="map-header">Location</h2>
+        <div class="map-frame">
+        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJkROJATgbCxwR5ZwCXvBK4QQ&key=AIzaSyC_TICb-EO4ZbGGBljAeg14dAnJgs5vUmk"></iframe>
         </div>
       </div>
       <footer id="contact">
