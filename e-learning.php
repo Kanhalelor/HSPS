@@ -1,10 +1,24 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hsps:e-learning</title>
+</head>
+<body>
+    <div class="wrapper">
+    <!DOCTYPE html>
 <html>
 <head>
     <title>HSPS E-learning</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/e-learn.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -19,19 +33,7 @@
             <li><a class="home" href="./signup.php">SIGN UP</a></li>
         </ul>
     </nav>
-    <div class="login-form">
-        <form action="#" class="login">
-            <h2 class="form-header">
-                LOGIN
-            </h2>
-            <label for="Email">Email</label>
-            <input type="email" name="username" id="mail">
-            <label for="Password">Password</label>
-            <input type="password" name="password" id="key">
-            <button class="login-btn">LOGIN</button>
-        </form>
-        <p class="signup-link">Do not have an account? <a href="./signup.php">SIGN UP.</a></p>
     </div>
-    <?php include("footer.php") ?>
+<?php include "footer.php" ?>
 </body>
 </html>

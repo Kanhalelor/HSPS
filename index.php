@@ -138,7 +138,7 @@
           <a href="#" class="insta"><i class="fa fa-instagram"></i></a>
         </div>
       </div>
-      <div class="map">
+      <div id="map" class="map">
         <h2 class="map-header">Location</h2>
         <div class="map-frame">
         <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJkROJATgbCxwR5ZwCXvBK4QQ&key=AIzaSyC_TICb-EO4ZbGGBljAeg14dAnJgs5vUmk"></iframe>

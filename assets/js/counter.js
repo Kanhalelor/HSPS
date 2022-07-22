@@ -10,9 +10,6 @@ for (let i = 0; i < counterEl.length; i+=1) {
 }
 console.log(values);
 
-
-
-
 // counter event handler
 const counterFunc = (arr) => {
 	const scrollDiv = document.querySelector('.school-statistics')

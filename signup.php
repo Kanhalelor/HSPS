@@ -46,7 +46,7 @@
             <input type="checkbox" name="agree" id="check">
             <button class="signup-btn">SIGNUP</button>
         </form>
-        <p class="info">Already have an account? <a href="./login.php">LOGIN.</a></p>
+        <p class="login-link">Already have an account? <a href="./login.php">LOGIN.</a></p>
     </div>
     <?php include("footer.php") ?>
 </body>
