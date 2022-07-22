@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+image {
+    box-sizing: content-box;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background: #eee;
@@ -142,8 +146,13 @@ label {
     cursor: pointer;
     color: #121212;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     margin-top: 2rem;
+}
+/* sign-up btn hover effects  */
+.signup-btn :hover {
+    background: #fff;
+    color: #f8851a;
 }
 
 input{
@@ -153,6 +162,11 @@ input{
     padding: .4rem .2rem;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
 }
-input:active {
+input:focus {
     border: 2px solid #f8851a;
+}
+
+.login-link {
+    margin: 1rem 0;
+    color: #f8851a;;
 }

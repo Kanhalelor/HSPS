@@ -257,6 +257,11 @@ footer {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
+/* event hover effects  */
+.event:hover {
+  transform: scale(1.02);
+  transition: transform .3s linear;
+}
 .event-title, .event-date, .more-info {
   margin: .6rem .2rem;
 }
@@ -294,46 +299,57 @@ footer {
 }
 /*download div*/
 .download-div {
+  position: relative;
   margin-top: 2rem;
-  width: 300px;
+  width: 250px;
   height: 350px;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   background: #fff;
-  padding: .2rem .1rem;
+  padding: 1rem .1rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 .download-div:hover {
-  transform: scale(1.01);
-  transition: .3s ease-in-out;
+  transform: scale(1.03);
+  transition: transform .3s ease-in-out;
+}
+/* on hover - underline header */
+.download-div:hover .download-item-name {
+  text-decoration: underline;
+}
+/* on hover opacity of child elements */
+.download-div:hover .download-item-img {
+  opacity: .3;
+}
+/* on hover - display download button */
+.download-div:hover .download-item-btn {
+  visibility: visible;
+  transition: visibility .4s linear;
 }
 .download-item-img {
-  opacity: .6;
-  outline: 1px solid #121212;
+  /* outline: 1px solid #121212; */
   max-width: 100%;
-  height: 78%;
+  height: 76%;
 }
 /* download item mane*/
 .download-item-name {
-  padding: .4rem 0;
+  padding: .6rem 0;
   text-transform: uppercase;
   padding: .5rem 0;
   text-align: center;
   width: 100%;
-  height: 22%;
 }
 
 /* download button*/
 .download-item-btn {
-  border-radius: 5px;
+  border-radius: 6.66px;
   width: 60%;
   align-self: center;
-  height: 18%;
-  padding: 1rem .2rem;
-  margin-top: .4rem;
+  padding: .4rem .2rem;
+  margin: 1rem 0;
   font-size: 16px;
   font-weight: 600;
   background: #f8851a;
@@ -342,11 +358,12 @@ footer {
   border: none;
   text-decoration: none;
   text-align: center;
+  visibility: hidden;
 }
 .download-item-btn:hover {
   background: #fff;
   color: #121212;
-  transition: background 0.3s linear;
+  transition: 0.3s linear;
   outline: .66px solid #f8851a;;
 }
 
@@ -363,7 +380,12 @@ footer {
   padding: 1rem 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
-
+/* school stats div: hover effects */
+.school-statistics:hover {
+  transform: scale(1.02);
+  transition: transform.3s linear;
+}
+/* stats div */
 .stats-div {
   display: flex;
   flex-flow: row-wrap;
@@ -371,9 +393,8 @@ footer {
   width: 100%;
   background-image: url(../stats-bg.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  /*background: #231;*/
   color: #eee;
   justify-content: space-around;
   padding: 2rem .4rem;
@@ -444,17 +465,44 @@ footer {
   color: darkgrey;
   font-size: 48px;
   background: none;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); */
 }
 /* larger middle icon */
 .middle {
-  font-size: 65px !important;
+  font-size: 80px !important;
+}
+.middle:hover {
+  transform: scale(1.2);
+  transition: transform .3s linear;
 }
 /* on hover */
 .social-icons a i:hover {
   transform: scale(1.05);
   color: var(--primary-color);
   transition: color .3s ease-in-out;
+}
+/* map div */
+.map {
+  background: #eee;
+  padding: 1rem .5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.map-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 1rem 0;
+  padding: .3rem;
+  color: #121212;
+  text-shadow: 0 1px 0 rgba(250, 249, 249, 0.747);
+}
+.map-frame{
+  padding: .6rem .6rem;
+  box-shadow: 0 0 6.66px rgba(0, 0, 0, 0.6);
 }
 /* responsiveness / media queries*/
 @media only screen and (max-width: 900px) {

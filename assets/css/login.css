@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+image {
+    box-sizing: content-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,7 +27,7 @@ body {
     align-items: center;
 }
 
-.main-nav {
+main-nav {
     position: relative;
     /* top: 0;
     left: 0; */
@@ -75,6 +79,7 @@ body {
     padding: 0.3rem .4rem;
     color: #faa940;
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    border-radius: 5px;
 }
 a:hover {
     background: #fff;
@@ -141,16 +146,26 @@ label {
     cursor: pointer;
     color: #121212;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     margin-top: 2rem;
 }
-
+/* login btn hover effects */
+.login-btn:hover {
+    background: #fff;
+    color: #f8851a;
+}
 input[type="email"], input[type="password"] {
     border: none;
     outline: none;
     padding: .4rem .2rem;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
 }
-input:active {
+/* input focus border */
+input:focus {
     border: 2px solid #f8851a;
+}
+
+/* singup link */
+.signup-link {
+    margin: 1rem 0;
 }
